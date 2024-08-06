@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informações por Código</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    input, button {
+      margin: 10px 0;
+    }
+    #result {
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    function getInfo() {
+      var code = document.getElementById('codeInput').value;
+      var info = {
+        '4546': ['aumentar spaten', 'aumentar corona', 'Info3', 'Info4', 'Info5'],
+        '002': ['InfoA', 'InfoB', 'InfoC', 'InfoD', 'InfoE']
+        // Adicione mais códigos e informações aqui
+      };
+      var result = info[code] || ['Código não encontrado'];
+      document.getElementById('result').innerHTML = result.join('<br>');
+    }
+  </script>
+</head>
+<body>
+  <h1>Digite o Código</h1>
+  <input type="text" id="codeInput" placeholder="Digite o código">
+  <button onclick="getInfo()">Buscar</button>
+  <div id="result"></div>
+</body>
+</html>
