@@ -20,8 +20,9 @@
     function getInfo() {
       var code = document.getElementById('codeInput').value;
       var info = {
-        '4546': ['aumentar spaten', 'aumentar corona', 'Info3', 'Info4', 'Info5'],
-        '002': ['InfoA', 'InfoB', 'InfoC', 'InfoD', 'InfoE']
+        '93385': ['hipermarket jardim cearesnce', 'Aumentar Corona/Spaten', 'Retirar marcas ambev', 'Info4'],
+        '90565': ['mineirao', 'Aumentar Corona/Spaten/Bud/Brahma', 'Retirar Concorrentes: Amstel/Einsebahn', 'InfoD', 'InfoE'],
+'90565': ['Distribuidora Mineira','SIM CORONA']
         // Adicione mais códigos e informações aqui
       };
       var result = info[code] || ['Código não encontrado'];
@@ -30,8 +31,8 @@
   </script>
 </head>
 <body>
-  <h1>Digite o Código</h1>
-  <input type="text" id="codeInput" placeholder="Digite o código">
+  <h1>DIGITE O EG DA SUA LOJA</h1>
+  <input type="text" id="codeInput" placeholder="EG">
   <button onclick="getInfo()">Buscar</button>
   <div id="result"></div>
 </body>
